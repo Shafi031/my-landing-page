@@ -1,0 +1,182 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.work-sans-normal {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+} 
+/* header background  */
+.header-bg{
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+}
+
+/* header nav start  */
+.header-nav , .banner-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    /* border: 2px solid rebeccapurple; */
+    padding: 0px 20px;
+    margin: 0 auto;
+    
+}
+
+.header-font{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.81rem;  /* 16px= 1rem*/
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.nav-align{
+    display: flex;
+    gap: 50px;
+}
+
+
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    font-size: 18px;
+
+
+}
+/* header nav end  */
+/* color-1 */
+.dark-2{
+    color: rgb(66, 66, 66);
+}
+
+.dark-3{
+    color: rgb(114, 114, 114)
+}
+
+.orange{
+    background: rgb(255, 144, 14);
+}
+
+/* header main start  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.text-head{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-1{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.btn-primary{
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+
+}
+
+.banner-image{
+    width: 100%;
+    margin: 0 auto;
+}
+/* main  */
+main > section{
+    margin-top: 130px ;
+}
+#Features{
+    color: rgb(255, 144, 14);
+}
+#of-our{
+    color: black;
+}
+#quick-list{
+    font-weight: 500;
+}
+
+.teams{
+    display: flex;
+    align-items: center;
+    
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left:130px;
+    max-width: 430px;
+}
+
+.section-title{
+    font-size: 2.8rem ;
+    font-weight: 700;
+}
+
+.feature-description{
+    margin-bottom: 32px;
+}
+
+.des{
+    width: 530px;
+}
+
+/* container  
+*/
+
+.fact{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* responsive banner 
+*/
+@media screen and (max-width: 576px ) {
+    .header-nav,
+    .nav-align,
+    .banner-image,
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px auto;
+    }
+}
